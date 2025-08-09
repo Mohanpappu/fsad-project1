@@ -1,0 +1,389 @@
+/* General Styles */
+.doctors-page {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  color: #333;
+}
+
+/* Page Title Section */
+.page-title-section {
+  background: linear-gradient(rgba(22, 160, 133, 0.85), rgba(22, 160, 133, 0.85)), url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 5%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.page-title-section h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+}
+
+.breadcrumbs a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumbs a:hover {
+  color: #e0e0e0;
+}
+
+.breadcrumbs span {
+  margin: 0 10px;
+}
+
+/* Doctors Intro Section */
+.doctors-intro-section {
+  padding: 80px 5% 40px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title.center {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title.center .title-underline {
+  margin: 0 auto 25px;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.title-underline {
+  width: 60px;
+  height: 3px;
+  background-color: #16a085;
+  margin-bottom: 25px;
+}
+
+.section-title.center p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #666;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Filter Categories */
+.filter-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 40px 0 30px;
+}
+
+.category-btn {
+  background-color: #f5f5f5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.category-btn.active {
+  background-color: #16a085;
+  color: white;
+  box-shadow: 0 4px 10px rgba(22, 160, 133, 0.2);
+}
+
+/* Doctors Grid Section */
+.doctors-grid-section {
+  padding: 40px 5% 100px;
+  background-color: #fff;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 40px;
+}
+
+.doctor-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-image {
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-image img {
+  transform: scale(1.05);
+}
+
+.doctor-social {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: all 0.3s ease;
+}
+
+.doctor-card:hover .doctor-social {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.doctor-social-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #16a085;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.doctor-social-icon:hover {
+  background-color: #138a72;
+  transform: scale(1.1);
+}
+
+.doctor-info {
+  padding: 30px;
+}
+
+.doctor-info h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.doctor-specialty {
+  color: #16a085;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.doctor-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.credential-item {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #555;
+}
+
+.doctor-description {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.book-appointment-btn {
+  width: 100%;
+  background-color: #16a085;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(22, 160, 133, 0.2);
+}
+
+.book-appointment-btn:hover {
+  background-color: #138a72;
+  box-shadow: 0 6px 15px rgba(22, 160, 133, 0.3);
+}
+
+/* Join Team Section */
+.join-team-section {
+  background-color: #f9f9f9;
+  padding: 100px 5%;
+}
+
+.join-team-section .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.join-team-content {
+  flex: 1;
+}
+
+.join-team-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.view-positions-btn {
+  background-color: #16a085;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(22, 160, 133, 0.2);
+}
+
+.view-positions-btn:hover {
+  background-color: #138a72;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(22, 160, 133, 0.3);
+}
+
+.join-team-image {
+  flex: 1;
+  position: relative;
+}
+
+.join-team-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* FontAwesome icons styling - just placeholders */
+.fab, .fas {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  mask-size: cover;
+  -webkit-mask-size: cover;
+}
+
+.fab.fa-linkedin {
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>');
+}
+
+.fab.fa-twitter {
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>');
+}
+
+.fas.fa-envelope {
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>');
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>');
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .doctors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  .join-team-section .container {
+    flex-direction: column;
+  }
+  
+  .join-team-image {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-title-section {
+    padding: 60px 5%;
+  }
+  
+  .page-title-section h1 {
+    font-size: 36px;
+  }
+  
+  .doctors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+  }
+  
+  .doctor-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-title-section h1 {
+    font-size: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 28px;
+  }
+  
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-categories {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+} 

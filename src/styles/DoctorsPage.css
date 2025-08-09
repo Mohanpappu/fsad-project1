@@ -1,0 +1,379 @@
+.doctors-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.doctors-hero {
+  background: linear-gradient(to right, #2a7fff, #0056b3);
+  color: white;
+  padding: 60px 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.doctors-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.doctors-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.doctors-intro {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.intro-icon {
+  flex: 0 0 100px;
+  color: #2a7fff;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.filter-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.department-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  background-color: #f0f0f0;
+  border: 2px solid transparent;
+  color: #555;
+  padding: 8px 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.filter-btn.active {
+  background-color: #2a7fff;
+  color: white;
+  border-color: #0056b3;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.doctor-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-image img {
+  transform: scale(1.05);
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.specialty, .department, .education {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.specialty svg, .department svg, .education svg {
+  margin-right: 10px;
+  color: #2a7fff;
+  width: 16px;
+}
+
+.bio {
+  margin: 15px 0;
+  line-height: 1.5;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.contact-info {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info svg {
+  margin-right: 10px;
+  color: #2a7fff;
+  width: 14px;
+}
+
+.appointment-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a7fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-btn svg {
+  margin-right: 10px;
+}
+
+.appointment-btn:hover {
+  background-color: #0056b3;
+}
+
+.team-cta {
+  background-color: #f5f7fa;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+.team-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.team-cta p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.careers-btn {
+  padding: 12px 25px;
+  background-color: #2a7fff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.careers-btn svg {
+  margin-right: 10px;
+}
+
+.careers-btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 992px) {
+  .doctors-hero {
+    padding: 50px 20px;
+  }
+  
+  .doctors-hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .doctors-intro {
+    padding: 30px;
+  }
+  
+  .doctors-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .doctors-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .doctors-hero p {
+    font-size: 1.1rem;
+  }
+  
+  .doctors-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .intro-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.6rem;
+  }
+  
+  .filter-container h3 {
+    font-size: 1.3rem;
+  }
+  
+  .doctors-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .team-cta {
+    padding: 30px 20px;
+  }
+  
+  .team-cta h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .doctors-hero {
+    padding: 40px 15px;
+  }
+  
+  .doctors-hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .doctors-hero p {
+    font-size: 1rem;
+  }
+  
+  .intro-text h2 {
+    font-size: 1.4rem;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .doctor-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .bio {
+    font-size: 0.9rem;
+  }
+  
+  .team-cta h2 {
+    font-size: 1.4rem;
+  }
+  
+  .team-cta p {
+    font-size: 1rem;
+  }
+}
+
+/* Temporary icon placeholders styling */
+.icon-placeholder {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+.specialty span:first-child, 
+.department span:first-child, 
+.education span:first-child,
+.contact-info p span:first-child,
+.appointment-btn span:first-child,
+.careers-btn span:first-child {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 1rem;
+  min-width: 16px;
+} 

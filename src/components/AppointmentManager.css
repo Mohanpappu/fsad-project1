@@ -1,0 +1,287 @@
+.appointment-manager {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.appointment-form {
+  margin-bottom: 2rem;
+}
+
+.appointment-form h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="date"]:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.time-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.time-slot {
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  background: white;
+  color: #2c3e50;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-slot:hover {
+  border-color: #3498db;
+  background: rgba(52, 152, 219, 0.1);
+}
+
+.time-slot.selected {
+  background: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  min-height: 100px;
+  resize: vertical;
+  transition: all 0.3s ease;
+}
+
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.cancel-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #e74c3c;
+  border-radius: 25px;
+  background: white;
+  color: #e74c3c;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.confirm-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: #2ecc71;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirm-btn:hover {
+  background: #27ae60;
+}
+
+.confirm-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.back-btn {
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #3498db;
+  border-radius: 25px;
+  background: white;
+  color: #3498db;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+/* Confirmation Step */
+.confirmation-step {
+  margin-bottom: 2rem;
+}
+
+.confirmation-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.confirmation-details p {
+  margin-bottom: 0.8rem;
+  color: #2c3e50;
+}
+
+/* Success Step */
+.success-step {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.success-step h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.success-step p {
+  color: #7f8c8d;
+  margin-bottom: 1.5rem;
+}
+
+.appointment-details {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+/* Existing Appointments */
+.existing-appointments {
+  margin-top: 3rem;
+  border-top: 2px solid #f0f0f0;
+  padding-top: 2rem;
+}
+
+.existing-appointments h3 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.appointment-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-info h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.appointment-info p {
+  color: #7f8c8d;
+  margin-bottom: 0.3rem;
+}
+
+.status {
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status.scheduled {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.status.cancelled {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.appointment-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.reschedule-btn {
+  padding: 0.5rem 1rem;
+  border: 2px solid #3498db;
+  border-radius: 20px;
+  background: white;
+  color: #3498db;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reschedule-btn:hover {
+  background: rgba(52, 152, 219, 0.1);
+}
+
+@media (max-width: 768px) {
+  .appointment-manager {
+    padding: 1rem;
+  }
+
+  .time-slots {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+
+  .appointment-card {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .appointment-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .appointment-actions button {
+    flex: 1;
+  }
+} 
