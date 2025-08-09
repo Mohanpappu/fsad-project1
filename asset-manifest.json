@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fsad-project1/static/css/main.b7998593.css",
+    "main.js": "/fsad-project1/static/js/main.2f5cc955.js",
+    "static/js/511.39f48ff6.chunk.js": "/fsad-project1/static/js/511.39f48ff6.chunk.js",
+    "index.html": "/fsad-project1/index.html",
+    "main.b7998593.css.map": "/fsad-project1/static/css/main.b7998593.css.map",
+    "main.2f5cc955.js.map": "/fsad-project1/static/js/main.2f5cc955.js.map",
+    "511.39f48ff6.chunk.js.map": "/fsad-project1/static/js/511.39f48ff6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7998593.css",
+    "static/js/main.2f5cc955.js"
+  ]
+}
